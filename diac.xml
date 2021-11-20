@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.2" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml">
+  <declaration>
+    <meta name="name" value="Diac" />
+    <meta name="minsize" value="60" />
+    <meta name="canflip" value="true" />
+    <meta name="author" value="Altair880@gmail.com" />
+    <meta name="additionalinformation" value="http://www.circuit-diagram.org/" />
+    <meta name="guid" value="5f102bac-fc55-4277-b902-02a13c88cfdb" />
+  </declaration>
+  <connections>
+    <group conditions="horizontal">
+      <connection name="a2" start="_Start" end="_Middle-30x" edge="Start" />
+      <connection name="a1" start="_Middle+30x" end="_End" edge="End" />
+        </group>
+    <group conditions="!horizontal">
+      <connection name="a2" start="_Start" end="_Middle-30y" edge="Start" />
+      <connection name="a1" start="_Middle+30y" end="_End" edge="End" />
+         </group>
+  </connections>
+ <render>
+   <group conditions="horizontal">
+      <line start="_Start" end="_Middle-7x" />
+      <line start="_Middle+7x" end="_End" />
+      <line start="_Middle+7x" end="_Middle+7x-14y" />
+      <line start="_Middle+7x-14y" end="_Middle-7x-7y" />
+      <line start="_Middle-7x-7y" end="_Middle+7x" />
+      <line start="_Middle+7x" end="_Middle+7x+14y" />
+      <line start="_Middle-7x-14y" end="_Middle-7x+14y" />
+      <line start="_Middle-7x+14y" end="_Middle+7x+7y" />
+      <line start="_Middle+7x+7y" end="_Middle-7x" />
+      </group>
+    <group conditions="!horizontal">
+      <line start="_Start" end="_Middle-7y" />
+      <line start="_Middle+7y" end="_End" />
+      <line start="_Middle-7y" end="_Middle-14x-7y" />
+      <line start="_Middle-14x-7y" end="_Middle-7x+7y" />
+      <line start="_Middle-7x+7y" end="_Middle-7y" />
+      <line start="_Middle-7y" end="_Middle+14x-7y" />
+      <line start="_Middle-14x+7y" end="_Middle+14x+7y" />
+      <line start="_Middle+14x+7y" end="_Middle+7x-7y" />
+      <line start="_Middle+7x-7y" end="_Middle+7y" />
+      </group>
+  </render>
+</component>
